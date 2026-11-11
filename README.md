@@ -1,6 +1,6 @@
 # UltiStack
 
-**A Z13-first personal AI platform designed to maximize verified free-cloud offloading while retaining large-context local capability.**
+**A personal AI platform designed to maximize verified free-cloud offloading while retaining large-context local capability.**
 
 Status: design and documentation in progress. An earlier local build demonstrated chat, vision/tool calls, coding edits with tests, and file-based voice. The integrated UltiStack privacy, routing, knowledge, and verification pipeline is planned, not deployed.
 
