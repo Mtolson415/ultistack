@@ -37,7 +37,7 @@ flowchart LR
 | Document extraction | Dedicated OCR candidate, exact artifact pending validation |
 | Anonymization / note assistance | Small local instruction model |
 | Advisory screening / task classification | Guard and router candidates, pending artifact and capability validation |
-| Voice | Whisper Large-v3 Turbo + Kokoro |
+| Voice | Prefer FLM NPU Whisper recognition after validation; Kokoro CPU provisional |
 | Cloud execution | FCC-configured free-tier provider models |
 
 Model names describe intended roles; artifact compatibility, licensing, context, quantization, and acceleration require validation. No throughput, instant-swap, or complete-privacy guarantee is claimed.
@@ -52,6 +52,6 @@ Model names describe intended roles; artifact compatibility, licensing, context,
 6. Expand eligible offloading with independent tests and provider/task evidence.
 7. Publish measured case studies; scale inference capacity when justified.
 
-See [project status](docs/status.md) and [publication policy](docs/publication.md). Detailed engineering records are maintained in a separate private repository. This public repository has independent Git history and contains no personal vault, raw conversations, credentials, or operational databases.
+See [voice/NPU reassessment](docs/voice-migration.md), [project status](docs/status.md) and [publication policy](docs/publication.md). Detailed engineering records are maintained in a separate private repository. This public repository has independent Git history and contains no personal vault, raw conversations, credentials, or operational databases.
 
 Author: Michael Tolson. No software license has been selected yet.

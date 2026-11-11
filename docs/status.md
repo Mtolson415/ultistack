@@ -9,6 +9,7 @@ Snapshot: November 10, 2026.
 | Earlier local voice | English/Spanish file-based loops passed; microphone and full disconnected acceptance remain open |
 | Complete UltiStack pipeline | Planned |
 | Linux migration | Selected next implementation iteration; distro/layout pending |
+| Linux speech reassessment | NPU-preferred FLM ASR selected for evaluation; CPU Kokoro provisional; no new device results |
 | Full-context inference | Target; filled-window validation pending |
 | Privacy/FCC adaptive offloading | Planned; no private-data transmission or trust result claimed |
 | Notes/calendar automation | Planned |
