@@ -30,14 +30,14 @@ flowchart LR
 
 | Role | Candidate / baseline |
 |---|---|
-| Local multimodal orchestrator | Requested Qwen3.6-35B-A3B + projector; existing Qwen3.8-27B baseline |
-| Heavy local coding | Qwen3-Coder-Next; on demand, maximum-context target |
+| Local multimodal orchestrator | mudler Qwen3.6-35B-A3B APEX-I-Quality + matching projector; exclusive heavy-model slot |
+| Heavy local coding | mudler Qwen3-Coder-Next APEX-I-Quality; on demand, 262K context target |
 | Code and notes indexing | Qwen3-Embedding-0.6B and 4B, separate Qdrant collections |
 | Retrieval ranking | Qwen3-Reranker-0.6B |
 | Document extraction | Dedicated OCR candidate, exact artifact pending validation |
-| Anonymization / note assistance | Small local instruction model |
+| Anonymization / note assistance | Qwen3-4B-Instruct-2507; deterministic restoration in application code |
 | Advisory screening / task classification | Guard and router candidates, pending artifact and capability validation |
-| Voice | Prefer FLM NPU Whisper recognition after validation; Kokoro CPU provisional |
+| Voice | Compare Qwen3-ASR-0.6B / Qwen3-TTS 0.6B with Whisper / Kokoro; independently validated Linux NPU runtimes |
 | Cloud execution | FCC-configured free-tier provider models |
 
 Model names describe intended roles; artifact compatibility, licensing, context, quantization, and acceleration require validation. No throughput, instant-swap, or complete-privacy guarantee is claimed.
@@ -52,6 +52,6 @@ Model names describe intended roles; artifact compatibility, licensing, context,
 6. Expand eligible offloading with independent tests and provider/task evidence.
 7. Publish measured case studies; scale inference capacity when justified.
 
-See [voice/NPU reassessment](docs/voice-migration.md), [project status](docs/status.md) and [publication policy](docs/publication.md). Detailed engineering records are maintained in a separate private repository. This public repository has independent Git history and contains no personal vault, raw conversations, credentials, or operational databases.
+See [corrected stack](docs/stack.md), [voice/NPU reassessment](docs/voice-migration.md), [project status](docs/status.md) and [publication policy](docs/publication.md). Detailed engineering records are maintained in a separate private repository. This public repository has independent Git history and contains no personal vault, raw conversations, credentials, or operational databases.
 
 Author: Michael Tolson. No software license has been selected yet.
