@@ -6,6 +6,6 @@ Publish only reviewed diagrams, synthetic fixtures, reproducible instructions, a
 
 Each future case study should state the problem, implemented behavior, exact relevant revisions, reproduction method, observations, limitations, and recovery. Label plans as plans. Link owning projects without implying endorsement.
 
-Planned case studies: recoverable Linux migration; filled-context inference; synthetic privacy and restoration; provider-task routing; reversible note organization; home-lab backup/monitoring; offline and failure recovery.
+Planned case studies: recoverable Linux migration; filled-context inference; synthetic privacy and restoration; provider-task routing; reversible note organization; supporting-host backup/monitoring; offline and failure recovery.
 
 Exports are deliberate file selections into independent Git history. Never mirror the private repository, push private branches, or rely on deleting files to remove historical disclosures.

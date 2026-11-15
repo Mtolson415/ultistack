@@ -4,7 +4,7 @@ Snapshot: November 10, 2026.
 
 | Area | Status |
 |---|---|
-| Earlier Z13 local chat, vision, harmless tools | Historical functional checks passed |
+| Earlier local chat, vision, harmless tools | Historical functional checks passed |
 | Earlier local coding | Meaningful edits and 19 tests passed on an isolated fixture |
 | Earlier local voice | English/Spanish file-based loops passed; microphone and full disconnected acceptance remain open |
 | Complete UltiStack pipeline | Planned |
@@ -13,7 +13,7 @@ Snapshot: November 10, 2026.
 | Full-context inference | Target; filled-window validation pending |
 | Privacy/FCC adaptive offloading | Planned; no private-data transmission or trust result claimed |
 | Notes/calendar automation | Planned |
-| Existing home-lab integration | Hardware available according to owner; service integration planned |
+| Optional supporting-host integration | Planned; deployment inventory is maintained privately |
 | Larger inference server | Future expansion; no purchase/deployment claimed |
 
 These are summaries of private engineering records, not independently reproduced public benchmarks. Sanitized fixtures and reproducible results will be added as implementation proceeds. Test counts from a narrow fixture do not demonstrate general coding reliability. Model self-grading is supplementary to independent checks.

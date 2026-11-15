@@ -1,6 +1,6 @@
 # UltiStack
 
-**A personal AI platform designed to maximize verified free-cloud offloading while retaining large-context local capability.**
+**A local-first AI platform designed to maximize verified free-cloud offloading while retaining large-context local capability.**
 
 Status: design and documentation in progress. An earlier local build demonstrated chat, vision/tool calls, coding edits with tests, and file-based voice. The integrated UltiStack privacy, routing, knowledge, and verification pipeline is planned, not deployed.
 
@@ -19,12 +19,12 @@ flowchart LR
   Trust --> Plan
 ```
 
-- **Z13 first:** complete initial platform on a 128 GB unified-memory laptop; no large server dependency.
+- **Single-host first:** design the initial platform to operate independently; validate memory requirements for selected models before installation.
 - **Offload progressively:** use [Free Claude Code](https://github.com/alishahryar1/free-claude-code) for eligible tasks and increase allocation using measured outcomes.
 - **Keep privacy separate from accuracy:** Presidio, Piiranha, secret scanning, contextual anonymization, and policy checks are planned layers. None guarantees perfect redaction.
 - **Maximum usable native contexts:** validate filled inputs, output allowance, memory peaks, quality, and responsiveness rather than quoting configured capacity.
 - **Integrated notes:** source-linked retrieval, active Obsidian organization, action history, and undo.
-- **Scale incrementally:** existing home-lab machines provide persistent services and monitoring; a larger inference server is a later iteration.
+- **Scale incrementally:** optional supporting hosts can provide persistent services and monitoring; a larger inference server is a later iteration.
 
 ## Planned model roles
 
@@ -46,7 +46,7 @@ Model names describe intended roles; artifact compatibility, licensing, context,
 
 1. Linux migration with backup, hardware checks, and rollback.
 2. Recover local chat/coding/voice baseline and validate maximum contexts.
-3. Integrate home-lab backups, persistent services, and monitoring.
+3. Validate optional supporting-host backups, persistent services, and monitoring.
 4. Add retrieval and reversible Obsidian changes.
 5. Validate a synthetic privacy gateway and bounded FCC pilot.
 6. Expand eligible offloading with independent tests and provider/task evidence.
@@ -55,3 +55,7 @@ Model names describe intended roles; artifact compatibility, licensing, context,
 See [corrected stack](docs/stack.md), [voice/NPU reassessment](docs/voice-migration.md), [project status](docs/status.md) and [publication policy](docs/publication.md). Detailed engineering records are maintained in a separate private repository. This public repository has independent Git history and contains no personal vault, raw conversations, credentials, or operational databases.
 
 Author: Michael Tolson. No software license has been selected yet.
+
+## Publication maintenance — 2026-11-15
+
+Public documentation was generalized to separate reusable project information from owner-specific operational context. Private handoffs retain necessary continuity. Review future public changes for personal identifiers, device inventory and private repository names. Earlier Git revisions are unchanged.
